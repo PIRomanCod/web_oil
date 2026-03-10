@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRO OIL YAĞ</title>
+    <link rel="stylesheet" href="./static/css/custom.css">
+</head>
+
+<body>
+
+<header class="main-header">
+    <div class="nav-container">
+        <div class="logo">
+            <a href="/">
+                <img src="./static/media/logo.png" alt="ProOil Logo">
+            </a>
+        </div>
+
+        <nav class="navbar">
+            <ul class="nav-menu">
+
+                <li><a href="./">Home</a></li>
+                <li><a href="./news">Last updates</a></li>
+                <li><a href="./products">Products</a></li>
+                <li><a href="./team">Team</a></li>
+                <li><a href="./documents">Quality</a></li>
+                <li><a href="./contacts">Contacts</a></li>
+
+<!--                -->
+                <li><a href="#">LogIn</a></li>
+                <li><a href="#" class="btn-dashboard">Restricted area</a></li>
+<!--                -->
+
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<hr>
+
+<section class="hero-slider">
+    <div class="slide active" style="background-image: url('./static/media/sunflower-field-18545-2560x1600.jpg');"></div>
+    <div class="slide" style="background-image: url('./static/media/ya-1.jpg');"></div>
+
+         <div class="hero-overlay">
+            <span class="badge top-right">Vegetable Oils for Feed & Pet Food Production</span>
+
+            <div class="hero-content">
+                <h1>TECHNOLOGY <br> <span class="text-red">OF THE FUTURE</span></h1>
+            </div>
+
+            <span class="badge top-left">Fatty acids and technical oils for biodiesel producers.</span>
+
+            <div class="hero-actions">
+                <a href="./products" class="btn-primary">OUR PRODUCTS</a>
+                <a href="./contacts" class="btn-secondary">CONTACT US</a>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="page-section">
+
+    <h1 class="page-title">Welcome to PRO OIL</h1>
+
+    <div class="cards-container">
+
+        <div class="card">
+            <h3>Who we are</h3>
+
+            <p>
+                Pro Oil Yağ — a group of companies active in the European oil & fats market.
+                <br><br>
+                With production and trading operations located near the Black Sea,
+                Marmara ports, and the EU border, we support stable export-import flows
+                across Europe, Türkiye, the UK, and the Middle East.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>What we do</h3>
+
+            <ul class="home-list">
+                <li>Fatty acids and technical oils for biodiesel producers</li>
+                <li>Refined glycerin and lecithin</li>
+                <li>Stearin and edible vegetable oils</li>
+                <li>Oleochemical and specialty feedstock</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<footer class="main-footer">
+    <div class="footer-container">
+        <div class="footer-col">
+            <h3 class="footer-logo">PRO OIL YAĞ</h3>
+            <p>High-performance products. Innovating for a sustainable future.</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>QUICK LINKS</h4>
+            <ul>
+                <li><a href="./">Home</a></li>
+                <li><a href="./products">Our Products</a></li>
+                <li><a href="./contacts">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>CONTACT US</h4>
+            <p><strong>Email:</strong> info@prooil.com.tr</p>
+            <p><strong>Call:</strong> +90 (xxx) xxx xx xx</p>
+            <p><strong>Location:</strong> Çerkezköy/TEKİRDAĞ, Türkiye</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 PRO OIL YAĞ. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="#">LinkedIn</a>
+            <a href="#">Twitter</a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    const slides = document.querySelectorAll('.slide');
+    let currentSlide = 0;
+
+    function nextSlide() {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.add('active');
+    }
+
+    setInterval(nextSlide, 4000);
+</script>
+
+</body>
+</html>
