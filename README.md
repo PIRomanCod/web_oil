@@ -18,3 +18,16 @@ dist
  ├ team/index.html
  ├ contacts/index.html
  └ static/
+
+
+Правильна архітектура для твого сайту
+Domain
+│
+├── Website
+│     GitHub Pages / CDN
+│
+├── Email
+│     Google Workspace
+│
+└── DNS
+      Cloudflare
