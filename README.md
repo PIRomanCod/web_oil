@@ -31,3 +31,18 @@ Domain
 │
 └── DNS
       Cloudflare
+
+
+Usefull:
+pip install django
+django-admin startproject prooil_site
+cd prooil_site
+python manage.py startapp public
+python manage.py startapp dashboard
+python manage.py startapp accounts
+python manage.py migrate
+python manage.py runserver
+http://127.0.0.1:8000
+python manage.py createsuperuser
+http://127.0.0.1:8000/admin
+
